@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul li {
+  list-style: none;
+}
+
+.inline-link {
+  font-style: italic;
+  color: rgb(27, 27, 233);
+  text-decoration: underline;
+}
+
+.inline-link:hover{
+  color: rgb(233, 4, 4)
+}
+
+.inline-link:active{
+  color: rgb(5, 188, 212);
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* styling the navigation bar */
+
+.header {
+  height: 100px;
+}
+
+.logo h1 {
+  text-align: center;
+  line-height: 50px;
+  font-size: 25px
+}
+
+.nav-bar {
+  width: fit-content; 
+}
+
+ 
+.nav-bar ul li {
+  display: inline-block;
+  margin: 5px;
+}
+ 
+.nav-bar ul li a{
+  padding: 5px
+}
+
+.nav-bar ul li :hover {
+  background-color: rgb(253, 234, 209);
+}
+
+.logo,
+.nav-bar ul li :hover {
+  color: rgba(182, 112, 20, 0.9);
+  
+} 
+
+/* creating responsive models for the navigation */
+@media screen and (min-width: 450px) {
+} 
+@media screen and (min-width: 750px) { 
+}
+@media screen and (min-width: 800px) {
+}
+@media screen and (min-width: 1000px) {
+}
+
+/*styling the banner tag */
+
+ .banner {
+  background-image: url('/images/use.jpg');
+  height: calc(40vh - 100px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:95%;
+  margin: 10px auto 0;
+}
+
+.intro {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.intro h2 {
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  color:rgba(59, 189, 7, 0.904)
+
+}
+
+.intro p {
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+/* styling the articles */
+
+.article-nav {
+  margin: 20px 10px;
+}
+
+.article-nav h4 {
+  line-height: 30px;
+  color:rgb(58, 189, 7)
+}
+
+.article-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article-nav ul li{
+  background-color: rgba(255, 238, 0, 0.575);
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.article {
+  margin: 20px 10px;
+  padding: 5px;
+  border-bottom: 0.002px dotted black;
+}
+
+.article h3 {
+  font-size: 22px;
+  margin: 20px auto;
+}
+
+.article h2 {
+  font-size: 20px;
+  text-align: center;
+  color: rgba(182, 112, 20, 0.9);
+  text-transform: uppercase;
+}
+
+.article p {
+  line-height: 25px;
+}
+
+.image-section img{
+  display: block;
+  margin: 0 auto;
+}
