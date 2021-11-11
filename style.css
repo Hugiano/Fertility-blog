@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0 auto;
   box-sizing: border-box;
+  
 }
 
 a {
@@ -58,10 +59,10 @@ body {
 }
 
 .nav-bar ul li :hover {
-  background-color: rgb(253, 234, 209);
+  border-bottom: rgba(182, 112, 20, 0.9);;
 }
 
-.logo,
+.logo a,
 .nav-bar ul li :hover {
   color: rgba(182, 112, 20, 0.9);
   
@@ -87,6 +88,7 @@ body {
   background-size: cover;
   width:95%;
   margin: 10px auto 0;
+  border-radius: 3px;
 }
 
 .intro {
@@ -138,7 +140,10 @@ body {
 
 .article h3 {
   font-size: 22px;
-  margin: 20px auto;
+  margin: 20px auto 10px;
+  color:rgba(59, 189, 7, 0.904)
+
+
 }
 
 .article h2 {
@@ -150,6 +155,43 @@ body {
 
 .article p {
   line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.test-img {
+  background-image: url('/images/test\ strip.jpg');
+  height: calc(40vh - 100px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:95%;
+  margin: 10px auto 0;
+  border-radius: 3px;
+}
+
+#assurance {
+  margin: 20px auto 0;
+  color: rgb(139, 76, 3);
+}
+
+#assurance>p{
+  font-style: italic;
+  text-align: center;
+}
+
+.benefits h3{
+  margin: 20px auto 0;
+}
+
+.benefits ul{
+  margin: 0 auto;
+  padding: 15px
+}
+
+.benefits ul li{
+  margin: 5px;
+  list-style:lower-roman;
+  text-align: justify;
 }
 
 .image-section img{
@@ -157,16 +199,79 @@ body {
   margin: 0 auto;
 }
 
+.FAQ h3 {
+  color: rgb(214, 177, 14);
+}
+
+.FAQ dl dt {
+  margin-bottom: 10px;
+}
+
+.FAQ dl dd {
+  line-height: 25px;
+  text-align: justify;
+}
+
+
+.box {
+  margin:50px auto 20px ;
+  padding: 5px;
+  border: 0.02px black;
+  border-style: dotted;
+  overflow: hidden;
+  width: fit-content;
+
+}
+
+#price {
+float: left;
+padding: 5px;
+margin-top: 15px;
+
+}
+
+#order {
+  float: right;
+  background: rgb(43, 85, 202);
+  padding: 3px 8px;
+  border-radius: 5px;
+  margin-top: 15px;
+ }
+
+ #order a{
+  color:rgb(250, 247, 243);
+  text-shadow: 1px 1px 1px rgb(44, 44, 44);
+  font-size: 20px;
+ }
+
+#delivery {
+  margin: 30px;
+}
+
+#delivery-text {
+  text-align: center;
+}
+
+#delivery-img {
+  text-align: center;
+}
+
 /* footer */
 
+
+
 .read-more {
-  margin: 10px 20px;
+  margin: 40px auto;
+  width: fit-content;
 }
 
 .read-more li {
   padding-left: 2px;
-  border-left: 2mm ridge rgba(220, 175, 50, 0.6);
   margin:3px;
+}
+
+.read-more li img {
+  text-align: center;;
 }
 
 .read-more li a{
@@ -182,4 +287,21 @@ body {
 
 .read-more li a:active{
   color: rgb(90, 98, 99)
+}
+
+.more {
+  margin-top:1em;
+  border-bottom: 0.002px solid grey;
+  padding: 5px;
+}
+
+#contact {
+  margin: 20px auto;
+  width:fit-content;
+  display: flex;
+}
+
+#contact div {
+  width: fit-content;
+  margin: 10px;
 }
