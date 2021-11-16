@@ -185,14 +185,23 @@ body {
 
 .benefits ul{
   margin: 0 auto;
-  padding: 15px
+  padding: 15px;
+  list-style: none; counter-reset: li;
 }
 
 .benefits ul li{
   margin: 5px;
-  list-style:lower-roman;
-  text-align: justify;
+  text-align:left;
+  counter-increment: li;
 }
+
+.benefits ul li::before{
+  content: counter(li);   color:rgba(53, 180, 3, 0.904);
+  display: inline-block; width: 1em; margin-left: -1.5em;
+  margin-right: 0.5em; text-align: right; direction: rtl
+}
+
+
 
 .image-section img{
   display: block;
@@ -216,31 +225,34 @@ body {
 .box {
   margin:50px auto 20px ;
   padding: 5px;
-  border: 0.02px black;
-  border-style: dotted;
+  box-shadow: 5px 2px 8px rgb(170, 170, 170);
   overflow: hidden;
   width: fit-content;
 
 }
 
 #price {
-float: left;
-padding: 5px;
-margin-top: 15px;
-
+  display: flex;
+  padding: 5px;margin-top: 15px;
 }
 
+#price div {
+  padding: 5px;
+}
+
+
 #order {
-  float: right;
-  background: rgb(43, 85, 202);
-  padding: 3px 8px;
+  background: rgb(29, 138, 189);
+  padding: 3px 5px;
   border-radius: 5px;
-  margin-top: 15px;
+  width: fit-content;
+  margin: 0 auto;
+  box-shadow: 3px 2px 4px rgb(170, 170, 170);;
  }
 
  #order a{
   color:rgb(250, 247, 243);
-  text-shadow: 1px 1px 1px rgb(44, 44, 44);
+  text-shadow: 1px 1px 1px rgb(170, 170, 170);;
   font-size: 20px;
  }
 
