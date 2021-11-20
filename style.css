@@ -64,19 +64,53 @@ body {
 
 .logo a,
 .nav-bar ul li :hover {
-  color: rgba(182, 112, 20, 0.9);
+  color: rgba(255, 195, 116, 0.9);
   
 } 
 
 /* creating responsive models for the navigation */
-@media screen and (min-width: 450px) {
-} 
-@media screen and (min-width: 750px) { 
+
+
+@media screen and (min-width: 500px) {
+
+  .header {
+    height: 50px;
+  }
+
+  .logo {
+    margin-top: 10px;
+  }
+
+  .logo h1 {
+    float: left;
+    width: fit-content;
+    margin-left: 15px;
+  }
+  
+   .nav-bar {
+     float: right;
+     margin: 15px
+   }
+
+  .nav-bar ul li {
+    display: inline-block;
+    margin: 3px;
+  }
+   
+  .nav-bar ul li a{
+    padding: 3px
+  } 
+
 }
+
 @media screen and (min-width: 800px) {
+
+  .content {
+      max-width: 500px;
+      margin: 0 auto;
+    }
 }
-@media screen and (min-width: 1000px) {
-}
+
 
 /*styling the banner tag */
 
@@ -86,22 +120,54 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width:95%;
+  width:100%;
   margin: 10px auto 0;
   border-radius: 3px;
 }
 
-.intro {
-  margin-left: 10px;
-  margin-right: 10px;
+@media screen and (min-width: 500px) {
+  .banner {
+    height: calc(50vh - 100px);
+    
+  }
 }
 
-.intro h2 {
-  line-height: 40px;
-  text-transform: uppercase;
-  text-align: center;
-  color:rgba(59, 189, 7, 0.904)
+@media screen and (min-width: 800px) {
 
+  .banner {
+    height: calc(60vh - 100px);
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+  .banner {
+    height: calc(70vh - 100px);
+  }
+  
+}
+
+@media screen and (min-width: 1200px) {
+
+  .banner {
+    height: calc(80vh - 100px);
+  }
+  
+}
+
+.intro {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  clear: both;
+}
+
+
+.intro h2 {
+  text-transform: uppercase;
+  color:rgba(59, 189, 7, 0.904);
+  text-align: center;
 }
 
 .intro p {
@@ -127,7 +193,7 @@ body {
 
 .article-nav ul li{
   background-color: rgba(255, 238, 0, 0.575);
-  padding: 10px;
+  padding: 5px;
   margin: 5px;
   border-radius: 5px;
 }
